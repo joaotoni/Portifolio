@@ -7,17 +7,23 @@ import Projetos from "../../assets/icons/bag-simple.svg"
 export default function Header(){
     return(
         <>
-            <header className="flex bg-[#1B1B1B] ;
-">
-                <div>
-                    <a href="" className="text-[#9C9C9C]"> <img src={Identification} alt="" className="w-8" />About Me</a>
-                    <a href="" className="text-[#9C9C9C]"> <img src={Projetos} alt="" className="w-8" /> Alguns Projetos</a>
-                </div>
-                <div>
-                    <a href="" className="text-[#9C9C9C]"> <img src={Github} className="w-8" alt="" /> Github </a>
-                    <a href="" className="text-[#9C9C9C]"> <img src={Linkedin} className="w-8" alt="" /> Linkedin</a>
-                    <a href="" className="text-[#9C9C9C]"> <img src={Envelope} className="w-8" alt="" /> Email</a>
-                </div>
+            <header >
+                <nav className=" bg-[#1B1B1B]  flex flex-row p-6">
+                    <ul className="md:flex md:items-center z-[-1] md:z-auto md-static absolute bg-[#1B1B1B] w-full left-0 md:2-auto md:py-0 py-4 md:pl-0 pl-0 ">
+                        <li className="mx-4 my-6 md:my-0">
+                            <a href="" className="text-[#9C9C9C] pr-6">Home</a>
+                        </li>
+                        <li className="mx-4 my-6 md:my-0">
+                            <a href="" className="text-[#9C9C9C] pr-6">Case Studies</a>
+                        </li >
+                        <li className="mx-4 my-6 md:my-0">
+                            <a href="" className="text-[#9C9C9C] pr-6">Recent Work </a>
+                        </li>
+                        <li className="mx-4 my-6 md:my-0">
+                            <a href="" className="text-[#9C9C9C]">About Me</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
         </>
     )
